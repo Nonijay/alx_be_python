@@ -23,12 +23,13 @@ def main():
             # Prompt for and remove an item
             remove_item = input("Enter an Item to remove: ")
             pass
-            shopping_list.remove()
+            shopping_list.remove(remove_item)
         elif choice == "3":
             # Display the shopping list
             display_list = print(shopping_list)
-            return display_list
             pass
+            display_list
+            
         elif choice == "4":
             print("Goodbye!")
             break
