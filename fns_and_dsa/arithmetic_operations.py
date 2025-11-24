@@ -1,17 +1,23 @@
 # Creating an arithmetic operations 
 
-def addition (x, y):
-    return (x + y)
+def perform_operation(num1: float, num2: float, operation: str):
+    op = operation.strip().lower()
 
-def subtract (x, y):
-    return (x - y)
+    if op == 'add':
+        return (num1 + num2)
 
-def multiply (x, y):
-    return (x * y)
+    elif op == 'subtract':
+        return (num1 - num2)
 
-def divide (x, y):
-    y == 0
-    print("Error: cannot be divided by 0")
-    return (x / y)
+    elif op == 'multiply':
+        return (num1 * num2)
+
+    elif op == 'divide':
+        num2 == 0
+        print("Error: cannot be divided by 0")
+        return (num1 / num2)
+
+    else:
+        print(f"Error: Enter a valid {perform_operation}")
 
 print(f"Arithmetic operations success")
