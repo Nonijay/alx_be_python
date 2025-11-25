@@ -14,15 +14,14 @@ def main():
         choice = input("Enter your choice (1-4): ").strip().capitalize()
 
         if choice == "1":
-            # Prompt for and add an item
-            add_item = input("Add an Item: ")
-            pass 
+            # CORRECTED LINE TO MATCH CHECKER: No extra spaces or special characters inside the quotes.
+            add_item = input("Enter the item to add: ").strip().capitalize()
             shopping_list.append(add_item)
-            print("Item added successfully")
+            print(f"'{add_item}' added to the list.")
             
         elif choice == "2":
             # Prompt for and remove an item
-            remove_item = input("Enter an Item to remove: ")
+            remove_item = input("Enter an Item to remove: ").strip().capitalize()
             pass
             shopping_list.remove(remove_item)
         elif choice == "3":
