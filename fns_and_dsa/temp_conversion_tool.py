@@ -1,25 +1,20 @@
 # --- Global Conversion Factors ---
-# Define the constants at the top level, making them globally accessible.
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9  # Factor for (F - 32) * (5/9)
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5  # Factor for (C * 9/5) + 32
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 # --- Conversion Functions ---
 
 def convert_to_celsius(fahrenheit):
     """
     Converts a temperature from Fahrenheit to Celsius using the global factor.
-    Formula: (F - 32) * (5/9)
     """
-    # The function automatically reads the global variable's value
     celsius = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
     return celsius
 
 def convert_to_fahrenheit(celsius):
     """
     Converts a temperature from Celsius to Fahrenheit using the global factor.
-    Formula: (C * 9/5) + 32
     """
-    # The function automatically reads the global variable's value
     fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
     return fahrenheit
 
@@ -28,9 +23,9 @@ def convert_to_fahrenheit(celsius):
 def main():
     print("Welcome to the Temperature Conversion Tool!")
     
-    # Get and validate the temperature input
+    # Input Validation and Prompt 1 (Strict Match Required)
     while True:
-        temp_input = input("Enter the temperature value: ")
+        temp_input = input("Enter the temperature to convert:").strip()
         try:
             temperature = float(temp_input)
             break
@@ -38,8 +33,8 @@ def main():
             # Raise the specified error message for non-numeric input
             raise ValueError("Invalid temperature. Please enter a numeric value.")
 
-    # Get and validate the unit input
-    unit = input("Is the temperature in Celsius (C) or Fahrenheit (F)? ").strip().upper()
+    # Input Prompt 2 (Strict Match Required)
+    unit = input("Is this temperature in Celsius or Fahrenheit? (C/F):").strip().upper()
 
     print("-" * 30)
 
