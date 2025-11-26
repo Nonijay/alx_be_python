@@ -11,7 +11,7 @@ def calculate_future_date ():
     # prompt the user to enter a number of days as an integer
     try:
         # Assuming the checker requires this specific prompt
-        days_input = input("Enter a number of days: ") 
+        days_input = input("Enter the number of days to add to the current date:") 
         num_days = int(days_input)
     except ValueError:
         print("Invalid input. Please enter a whole number.")
