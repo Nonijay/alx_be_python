@@ -31,7 +31,7 @@ class TestSimpleCalculator(unittest.TestCase):
 
     # --- Test Cases for subtract() ---
 
-    def test_subtraction_positive_numbers(self):
+    def test_subtraction(self):
         """Test subtraction resulting in a positive number."""
         self.assertEqual(self.calc.subtract(10, 4), 6)
         
@@ -46,7 +46,7 @@ class TestSimpleCalculator(unittest.TestCase):
         
     # --- Test Cases for multiply() ---
 
-    def test_multiplication_positive(self):
+    def test_multiply(self):
         """Test multiplication of two positive integers."""
         self.assertEqual(self.calc.multiply(3, 7), 21)
 
@@ -64,7 +64,7 @@ class TestSimpleCalculator(unittest.TestCase):
 
     # --- Test Cases for divide() ---
 
-    def test_division_normal(self):
+    def test_divide(self):
         """Test standard division resulting in an integer."""
         self.assertEqual(self.calc.divide(10, 2), 5)
 
