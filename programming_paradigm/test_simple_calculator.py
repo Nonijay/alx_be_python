@@ -12,7 +12,7 @@ class TestSimpleCalculator(unittest.TestCase):
 
     # --- Test Cases for add() ---
 
-    def test_addition_positive_numbers(self):
+    def test_addition(self):
         """Test addition with two positive integers."""
         self.assertEqual(self.calc.add(10, 5), 15)
 
