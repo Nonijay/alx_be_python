@@ -46,7 +46,7 @@ class TestSimpleCalculator(unittest.TestCase):
         
     # --- Test Cases for multiply() ---
 
-    def test_multiply(self):
+    def test_multiplication(self):
         """Test multiplication of two positive integers."""
         self.assertEqual(self.calc.multiply(3, 7), 21)
 
