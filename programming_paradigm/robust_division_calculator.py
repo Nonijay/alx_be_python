@@ -27,4 +27,4 @@ def safe_divide(numerator, denominator):
 
     except ValueError:
         # Catch the specific error when inputs cannot be converted to floats (non-numeric)
-        return "Error: Both inputs must be valid numeric values."
+        return "Error: Please enter numeric values only."
